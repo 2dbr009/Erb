@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERB Elétrica</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="src/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="src/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="src/favicon-16x16.png" />
+    <link rel="manifest" href="src/site.webmanifest" />
+    <link rel="mask-icon" href="src/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased">
+
+    <header class="bg-gray-900 text-white py-6 shadow-lg">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+<a href="#" class="mb-4 md:mb-0">
+    <img src="src/logo1.png.png" alt="Logo ERB Elétrica" style="height: 300px; width: auto;">
+</a>
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-6">
+                    <li><a href="#sobre" class="hover:text-red-400 transition duration-300">Sobre Nós</a></li>
+                    <li><a href="#servicos" class="hover:text-red-400 transition duration-300">Serviços</a></li>
+                    <li><a href="#projetos" class="hover:text-red-400 transition duration-300">Projetos</a></li>
+                    <li><a href="#depoimentos" class="hover:text-red-400 transition duration-300">Depoimentos</a></li>
+                    <li><a href="#contato" class="hover:text-red-400 transition duration-300">Contato</a></li>
+                    <li><a href="bombas/index.html" class="hover:text-red-400 transition duration-300">Bombas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-r from-gray-800 to-gray-900 text-white py-20 md:py-32 text-center shadow-inner">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                Soluções Elétricas <span class="text-red-500">Confiáveis</span> e Inovadoras
+            </h1>
+            <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto opacity-90">
+                A ERB Elétrica é especialista em instalações, manutenção e projetos elétricos, garantindo segurança e eficiência para sua casa ou negócio.
+            </p>
+            <a href="#servicos" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                Conheça Nossos Serviços
+            </a>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 section-title mx-auto">Sobre Nós</h2>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <img src="https://placehold.co/600x400/1e293b/e2e8f0?text=Equipe+ERB+Eletrica" alt="Equipe ERB Elétrica" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2 text-lg leading-relaxed text-gray-700">
+                    <p class="mb-6">
+                        A ERB Elétrica nasceu da paixão por oferecer soluções elétricas de alta qualidade, seguras e eficientes. Com anos de experiência no mercado, nossa equipe é composta por profissionais altamente qualificados e dedicados, prontos para atender às mais diversas demandas, desde pequenas instalações residenciais até grandes projetos industriais.
+                    </p>
+                    <p class="mb-6">
+                        Nosso compromisso é com a excelência, a inovação e, acima de tudo, a segurança. Utilizamos as melhores práticas e materiais do mercado para garantir que cada projeto seja executado com o máximo de rigor técnico e dentro das normas vigentes.
+                    </p>
+                    <p>
+                        Acreditamos que um bom trabalho elétrico é a base para o funcionamento de qualquer ambiente, e é por isso que nos esforçamos para superar as expectativas de nossos clientes em cada serviço prestado.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 section-title mx-auto">Nossos Serviços</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-red-500 mb-4 text-5xl text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Instalações Elétricas</h3>
+                    <p class="text-gray-600 text-center">
+                        Realizamos instalações elétricas completas para residências, comércios e indústrias, garantindo segurança e conformidade com as normas.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-red-500 mb-4 text-5xl text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.25 2.25 0 0021 17.25L15.17 11.42M12.75 12.75L11.42 11.42M21 12.75V12A9 9 0 003 12.75h18z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Manutenção Elétrica</h3>
+                    <p class="text-gray-600 text-center">
+                        Serviços de manutenção preventiva e corretiva para sistemas elétricos, prolongando a vida útil e evitando falhas.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-red-500 mb-4 text-5xl text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571-3 5.571 3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Projetos Elétricos</h3>
+                    <p class="text-gray-600 text-center">
+                        Desenvolvimento de projetos elétricos personalizados, otimizando o consumo e garantindo a funcionalidade.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-red-500 mb-4 text-5xl text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.01-.117 2.005-.331 2.953M12 21.75c-1.01 0-2.005-.117-2.953-.331M21 12a9 9 0 00-9-9m9 9v.75m-9-9h.75M12 21.75v-.75M12 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM3 13.5V12a9 9 0 019-9m-9 9h-.75M3 13.5a9 9 0 009 9m-9-9v.75" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Laudos e Inspeções</h3>
+                    <p class="text-gray-600 text-center">
+                        Emissão de laudos técnicos e inspeções elétricas para garantir a conformidade e segurança das instalações.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-red-500 mb-4 text-5xl text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75A2.25 2.25 0 0015.75 1.5H13.5m-3 0V3m3-1.5V3m-3 1.5H10.5m0 0H9.75M9.75 4.5V3m.75 1.5V3m-3 1.5H6.75m0 0H6v.75m.75-.75V6m0 0H6v.75m.75-.75V7.5m0 0H6v.75m.75-.75V9m0 0H6v.75m.75-.75V10.5m0 0H6v.75m.75-.75V12m0 0H6v.75m.75-.75V13.5m0 0H6v.75m.75-.75V15m0 0H6v.75m.75-.75V16.5m0 0H6v.75m.75-.75V18m0 0H6v.75m.75-.75V19.5m0 0H6v.75m.75-.75V21m0 0H6v.75m.75-.75V22.5m0 0H6v.75m.75-.75V24m0 0H6v.75m.75-.75V25.5" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Automação Industrial</h3>
+                    <p class="text-gray-600 text-center">
+                        Soluções em automação para otimizar processos industriais, aumentando a produtividade e reduzindo custos.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-red-500 mb-4 text-5xl text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v3.75M12 3a2.25 2.25 0 012.25 2.25v3.75M12 3a2.25 2.25 0 00-2.25 2.25v3.75M9 12h6m-6 0a3 3 0 006 0m-6 0v6a3 3 0 006 0v-6m-6 0h6" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Manutenção de Bombas Elétricas</h3>
+                    <p class="text-gray-600 text-center">
+                        Serviços especializados em manutenção preventiva e corretiva de bombas elétricas, garantindo eficiência e durabilidade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 section-title mx-auto">Nossos Projetos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://placehold.co/600x400/334155/e2e8f0?text=Projeto+Residencial" alt="Projeto Elétrico Residencial" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Instalação Residencial Moderna</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Projeto completo de instalação elétrica para uma residência de alto padrão, com foco em automação e eficiência energética.
+                    </p>
+                    <a href="residencial/" class="text-red-600 hover:text-red-800 font-medium">Ver Detalhes &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://placehold.co/600x400/334155/e2e8f0?text=Projeto+Comercial" alt="Projeto Elétrico Comercial" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Retrofit de Iluminação Comercial</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Modernização do sistema de iluminação de um escritório, com substituição por LEDs e otimização do consumo.
+                    </p>
+                    <a href="comercial/" class="text-red-600 hover:text-red-800 font-medium">Ver Detalhes &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://placehold.co/600x400/334155/e2e8f0?text=Manutenção+Predial" alt="Manutenção Predial" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Manutenção Preventiva Predial</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Contrato de manutenção elétrica preventiva para edifício comercial, assegurando o bom funcionamento de todos os sistemas.
+                    </p>
+                    <a href="manuntencao/" class="text-red-600 hover:text-red-800 font-medium">Ver Detalhes &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://placehold.co/600x400/334155/e2e8f0?text=Automação+Industrial" alt="Automação Industrial" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Automação Industrial</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Implementação de sistemas de automação para otimizar uma linha de produção.
+                    </p>
+                    <a href="automacao/" class="text-red-600 hover:text-red-800 font-medium">Ver Detalhes &rarr;</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://placehold.co/600x400/334155/e2e8f0?text=Manutenção+de+Bombas+Elétricas" alt="Manutenção de Bombas Elétricas" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Manutenção de Bombas Elétricas</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Serviços especializados em manutenção preventiva e corretiva de bombas elétricas, garantindo eficiência e durabilidade.
+                    </p>
+                    <a href="bombas/" class="text-red-600 hover:text-red-800 font-medium">Ver Detalhes &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 section-title mx-auto">O Que Nossos Clientes Dizem</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center text-center hover:shadow-xl transition duration-300">
+                    <img src="https://placehold.co/80x80/ef4444/ffffff?text=C1" alt="Cliente 1" class="w-20 h-20 rounded-full mb-4 object-cover border-4 border-red-500">
+                    <p class="text-gray-700 italic mb-4">
+                        "A ERB Elétrica superou nossas expectativas! O serviço foi rápido, eficiente e com um profissionalismo impecável. Recomendo a todos!"
+                    </p>
+                    <p class="font-semibold text-gray-800">- João Silva, Gerente de Manutenção</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center text-center hover:shadow-xl transition duration-300">
+                    <img src="https://placehold.co/80x80/ef4444/ffffff?text=C2" alt="Cliente 2" class="w-20 h-20 rounded-full mb-4 object-cover border-4 border-red-500">
+                    <p class="text-gray-700 italic mb-4">
+                        "Contratamos a ERB para a instalação do nosso sistema solar e estamos muito satisfeitos. Equipe técnica e atenciosa. Excelente trabalho!"
+                    </p>
+                    <p class="font-semibold text-gray-800">- Maria Souza, Proprietária</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 section-title mx-auto">Entre em Contato</h2>
+            <div class="max-w-3xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+                <p class="text-center text-lg text-gray-700 mb-8">
+                    Tem um projeto em mente ou precisa de um orçamento? Fale conosco!
+                </p>
+<form action="/send-message" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Seu Nome</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm" placeholder="Seu nome completo">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Seu E-mail</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm" placeholder="seu.email@exemplo.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Sua Mensagem</label>
+                        <textarea id="message" name="message" rows="5" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500 sm:text-sm" placeholder="Descreva seu projeto ou sua dúvida..."></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                            Enviar Mensagem
+                        </button>
+                    </div>
+</form>
+                <div id="form-response" class="mt-4 text-center text-lg font-semibold"></div>
+                <div class="mt-8 text-center text-gray-600">
+                    <p class="mb-2">Ou entre em contato diretamente:</p>
+                    <p class="text-lg font-semibold">Telefone: (11) 97457-5827</p>
+                    <p class="text-lg font-semibold">E-mail: contato@erbeletrica.com.br</p>
+                    <p class="text-lg font-semibold">Endereço: Av. Doutor Frederico Martins da Costa Carvalho, 240 - São Paulo, São Paulo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8 text-center shadow-inner">
+        <div class="container mx-auto px-4">
+            <p class="mb-4">&copy; 2023 ERB Elétrica. Todos os direitos reservados.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-red-500 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-red-500 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-3.309 0-5.996 2.686-5.996 5.996 0 3.309 2.687 5.996 5.996 5.996s5.996-2.687 5.996-5.996c0-3.31-2.687-5.996-5.996-5.996zm0 10.992c-2.756 0-4.996-2.24-4.996-4.996s2.24-4.996 4.996-4.996 4.996 2.24 4.996 4.996-2.24 4.996-4.996 4.996zm-5.996 3.008c-3.309 0-5.996 2.686-5.996 5.996 0 3.309 2.687 5.996 5.996 5.996s5.996-2.687 5.996-5.996c0-3.31-2.687-5.996-5.996-5.996zm0 10.992c-2.756 0-4.996-2.24-4.996-4.996s2.24-4.996 4.996-4.996 4.996 2.24 4.996 4.996-2.24 4.996-4.996 4.996zm11.992-3.008c-3.309 0-5.996 2.686-5.996 5.996 0 3.309 2.687 5.996 5.996 5.996s5.996-2.687 5.996-5.996c0-3.31-2.687-5.996-5.996-5.996zm0 10.992c-2.756 0-4.996-2.24-4.996-4.996s2.24-4.996 4.996-4.996 4.996 2.24 4.996 4.996-2.24 4.996-4.996 4.996z"/></svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-red-500 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.415 0-6.184 2.769-6.184 6.184 0 .484.054.955.149 1.407-5.14-.259-9.733-2.725-12.787-6.463-.53 1.026-.831 2.21-.831 3.483 0 2.143 1.089 4.041 2.748 5.146-.95.027-1.84-.292-2.625-.724v.079c0 2.992 2.13 5.47 4.943 6.03-.516.135-1.059.208-1.612.208-.395 0-.779-.038-1.153-.11.794 2.474 3.078 4.26 5.794 4.314-2.118 1.656-4.514 2.647-7.258 2.647-.474 0-.94-.029-1.4-.083 2.891 1.861 6.357 2.95 10.065 2.95 12.076 0 18.67-10.003 18.67-18.67 0-.285-.009-.568-.02-.85.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Removed script.js reference as it does not exist -->
+    <script>
+        const form = document.querySelector('form[action="/send-message"]');
+        const responseDiv = document.getElementById('form-response');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            try {
+                const res = await fetch('/send-message', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const data = await res.json();
+
+                if (res.ok) {
+                    responseDiv.textContent = data.success;
+                    responseDiv.style.color = 'green';
+                    form.reset();
+                } else {
+                    responseDiv.textContent = data.error || 'Erro ao enviar a mensagem.';
+                    responseDiv.style.color = 'red';
+                }
+            } catch (error) {
+                responseDiv.textContent = 'Erro na comunicação com o servidor.';
+                responseDiv.style.color = 'red';
+            }
+        });
+    </script>
+</body>
+</html>
+=======
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <img src="https://placehold.co/600x400/334155/e2e8f0?text=Automação+Industrial" alt="Automação Industrial" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Automação de Linha de Produção</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Implementação de sistemas de automação para otimizar uma linha de produção.
+                    </p>
+                    <a href="automacao/" class="text-red-600 hover:text-red-800 font-medium">Ver Detalhes &rarr;</a>
+                </div>
+                </div>
