@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato - ERB Elétrica</title>
+  <link rel="icon" type="image/png" href="../src/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <div class="logo-wrapper">
+          <a href="../index.html">
+            <img src="../src/logo.png" alt="ERB Elétrica Logo" class="logo-img" />
+          </a>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="about-us/index.html">Sobre</a></li>
+        <li><a href="/servicos/index.html">Serviços</a></li>
+        <li><a href="contato/index.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-text">
+      <h1>Contato ERB Elétrica</h1>
+      <p>Entre em contato conosco para solicitar orçamentos, tirar dúvidas ou obter mais informações sobre nossos serviços.</p>
+      <p>Estamos à disposição para atender suas necessidades com qualidade e segurança.</p>
+      <p>WhatsApp: (11) 97457-5827</p>
+      <p>Email: contato@erbeletrica.com.br</p>
+      <p>Endereço: Av. Doutor Frederico Martins da Costa Carvalho, número 240, São Paulo, SP</p>
+      <button id="openFormBtn" class="btn btn-secondary">Enviar mensagem</button>
+      <div id="popup" style="display:none; margin-top: 1rem; border: 1px solid #ccc; padding: 1rem; width: 200px; text-align: center; position: relative;">
+        <span id="closePopup" style="position: absolute; top: 5px; right: 10px; cursor: pointer; font-weight: bold;">&times;</span>
+        <p>Entre em contato conosco via WhatsApp ou Email</p>
+        <a href="https://wa.me/5511974575827" target="_blank" rel="noopener noreferrer" style="margin-right: 1rem;">
+          <img src="../src/whatslogo.png" alt="WhatsApp" style="width: 50px; cursor: pointer;" />
+        </a>
+        <a href="mailto:contato@erbeletrica.com.br" target="_blank" rel="noopener noreferrer">
+          <img src="../src/gmail-logo.png" alt="Email" style="width: 50px; cursor: pointer;" />
+        </a>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: #1f1f1f;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 120px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: #f0f0f0;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #121212;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.btn-secondary:hover {
+  background-color: #007bff;
+  color: #121212;
+}
+
+main {
+  padding: 0rem 2rem 4rem 2rem; /* further reduced top padding to move content closer to header */
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: -100px; /* move content 30px up */
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007bff; /* changed to blue */
+}
+
+.hero-text p {
+  font-size: 1.125rem;
+  margin-bottom: 1rem; /* reduced bottom margin to decrease space */
+  color: #999; /* changed to a slightly lighter gray */
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-tree {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.hero-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 80%; /* reduced size from 100% to 80% */
+  border-radius: 8px;
+  box-shadow: none;
+  background-color: transparent;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.hero-text {
+  box-shadow: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.image-wrapper {
+  display: inline-block;
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 1rem 2rem 4rem 2rem; /* fixed spacing typo: removed space between 1 and rem */
+  max-width: 1200px;
+  margin: -70px auto 0 auto;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #007bff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text, .hero-image {
+    flex: 1 1 100%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+}
+
+/* Gallery image cycling for index.html */
+#galeria .gallery-grid img {
+  display: none;
+  width: auto;
+  max-width: 100%;
+  height: 500px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin: 0 auto 0.75rem auto;
+  display: block;
+}
+
+#galeria .gallery-grid img.active {
+  display: block;
+}
